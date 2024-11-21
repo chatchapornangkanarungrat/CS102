@@ -12,13 +12,15 @@ int main()
     for (i=0;i<x;i++) 
 	{
 		count=0;
-        for ( j=1;j<x;j++) 
+        for ( j=0;j<x;j++) 
 		{
             if (n[i]==n[j]) 
+            {
             count++;
+        	}
         }
         
-		if (count>=maxcount && n[i]>maxnum) 
+		if (count>=maxcount && n[i]>=maxnum) 
 		{
             maxcount=count;
             maxnum=n[i];
